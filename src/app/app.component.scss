@@ -1,0 +1,80 @@
+header {
+  text-align: center;
+  margin: 2rem auto;
+
+  > button {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 2px solid #abcd;
+    margin: 1rem auto 0.25rem auto;
+  }
+
+  div button {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #abcd;
+    margin: 0.25rem 0.25rem 1rem 0.25rem;
+
+    &:disabled {
+      border-width: 2px;
+      color: black;
+    }
+  }
+}
+
+.game-columns {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.125rem;
+
+  width: 35rem;
+  height: 35rem;
+}
+
+.game-rows {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0.125rem;
+}
+
+.block {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+
+  background: #abcd;
+
+  img {
+    margin: 10px 0 0 0;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.flagged {
+  background: transparent;
+}
+
+.bomb {
+  background: #dd555567;
+}
+
+.safe {
+  background: #55dd5567;
+}
+
+@media (max-width: 880px) {
+  .game-columns {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .block {
+    width: 3rem;
+    height: 3rem;
+  }
+}
