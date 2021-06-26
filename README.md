@@ -1,27 +1,27 @@
 # Minesweeper
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+## Tech Stack
 
-## Development server
+- **Framework :** Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **Languages :**
+  
+  - TypeScript
+  - HTML
+  - CSS via SASS
 
-## Code scaffolding
+- **Hosting  :** GitHub Pages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Play
 
-## Build
+Create a new game with the currently selected difficult level at any time.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Select a difficulty level to create a new game in that difficulty level.
 
-## Running unit tests
+Difficulty levels affect the probability of each block being a bomb.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Left-click on blocks that you think are safe.
 
-## Running end-to-end tests
+Right-click on blocks that you want to flag as mines.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To win, left-click all non-mine blocks. Left-click on a mine block, and you lose.
